@@ -13,3 +13,7 @@ chmod +x MACOS.sh
 ./MACOS.sh
 
 By robert grubecki
+(If you are using ubuntu 16.04 then use macubntu16.04) 
+
+(IF you are using ubuntu 18.04 + the use this link 
+https://github.com/debugster/GnomeTweaks#install-macos-themes-on-ubuntu)
