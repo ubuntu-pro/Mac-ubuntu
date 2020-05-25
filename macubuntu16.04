@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#MACUBNTU 16.04 custamization 
+
+sudo apt-get install gnome-shell 
+sudo apt-get update 
+sudo apt-get install gnome-tweak-tool 
+sudo add-apt-repository ppa:noobslab/macbuntu 
+sudo apt-get update 
+sudo apt-get install macbuntu-os-icons-lts-v7 
+sudo apt-get install macbuntu-os-ithemes-lts-v7 
+sudo apt-get install plank 
+sudo add-apt-repository ppa:noobslab/macbuntu 
+sudo apt-get update 
+sudo apt-get install macbuntu-os-plank-theme-lts-v7 
+sudo add-apt-repository ppa:noobslab/macbuntu 
+sudo apt-get update 
+sudo apt-get install slingscold 
+sudo apt install dconf-editer 
+dconf write /org/gnome/desktop/interface/gtk-theme "'Macbuntu-os"' 
+dconf write /org/gnome/desktop/interface/icon-theme "'Macbuntu-os"' 
+dconf write /org/gnome/desktop/interface/cursor-theme "'Mac-cursors"' 
+sudo apt install curl 
+curl -L -O https://www.dropbox.com/sh/aadxx3fy2gw7l8d/AAANKta0CAwtJ7Zl3g5S6H8ba?dl=0
+tar xvf AAANKta0CAwtJ7Zl3g5S6H8ba?dl=0 
+dconf write /org/gnome/desktop/backround/picture-uri "'file:///root/AAANKta0CAwtJ7Zl3g5S6H8ba?dl=0_FILES/mbuntu-3.jpg  
+wget -O mac-fonts.zip https://drive.noobslab.com/data/Mac/macfonts.zip
+sudo unzip mac-fonts.zip -d /usr/share/fonts; rm mac-fonts.zip
+sudo fc-cache -f -v 
+wget -O launcher_bfb.png https://drive.noobslab.com/data/Mac/launcher-logo/apple/launcher_bfb.png
+sudo mv launcher_bfb.png /usr/share/unity/icons/ 
+sudo add-apt-repository ppa:noobslab/macbuntu
+sudo apt-get update
+sudo apt-get install albert 
+sudo apt-get install libreoffice-style-sifr 
+
+
+
+
